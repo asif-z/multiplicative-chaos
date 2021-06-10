@@ -1,6 +1,6 @@
 # Getting started with Compute Canada
 
-1. Make an account at https://ccdb.computecanada.ca; To use some clusters like Niagara, you need to specially request access from the account
+1. Make an account at https://ccdb.computecanada.ca; To use some clusters like Niagara, you need to specially request access from the account.
 
 2. Connect to the specific cluster using SSH in the terminal of your local machine. For example, if you want to access Niagara, you would do
 
@@ -22,20 +22,20 @@ Here `pathToFile` is the path to the file you want to copy and `destinationPath`
 scp username@niagara.computecanada.ca:filePath destinationPath
 ```
 	
-4. Usually, you will have to copy mainly three files to the cluster: the job script, your uncompiled C++ code, and a makefile (not strictly neccessary)
+4. Usually, you will have to copy mainly three files to the cluster: the job script, your uncompiled C++ code, and a makefile (not strictly neccessary).
 
 5. In compiling your code, you will want to include a special flag that will allow you to take advantage of the cluster's optimized CPUs. If you are using gcc to compile, including the flag `-march=native` should be enough (don't forget the `-O3` flag also, which is useful even on your local machine).
 
 6. A simple job script (.sh file) looks something like this:
 
 ```
-\#!/bin/bash
-\#SBATCH --nodes=1
-\#SBATCH --cpus-per-task=40
-\#SBATCH --time=24:00:00
-\#SBATCH --job-name a5000_20000000_X8=1
-\#SBATCH --mail-user= email@gmail.com
-\#SBATCH --mail-type=ALL
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=40
+#SBATCH --time=24:00:00
+#SBATCH --job-name a5000_20000000_X8=1
+#SBATCH --mail-user= email@gmail.com
+#SBATCH --mail-type=ALL
 cd $SLURM_SUBMIT_DIR
 module load NiaEnv/2018a
 module load gcc/7.3.0
@@ -61,7 +61,7 @@ When you submit a job, you receive a job id, which is useful to know more about 
 8. The following commands are useful to obtain info about your job:
 
 ```
-squeue -u username        # (about your jobs that are queued)
+squeue -u username        # (about your queued jobs)
 
 squeue -j JOBID    	  # (status of job with JOBID)
 
