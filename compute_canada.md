@@ -61,13 +61,13 @@ When you submit a job, you receive a job id, which is useful to know more about 
 8. The following commands are useful to obtain info about your job:
 
 ```
-squeue -u username    # (about your jobs that are queued)
+squeue -u username        # (about your jobs that are queued)
 
 squeue -j JOBID    	  # (status of job with JOBID)
 
-scancel -i JOBID         # (cancel a job)
+scancel -i JOBID          # (cancel a job)
 
-sacct      		              # (info about recent jobs, even running/finished ones)
+sacct      		  # (info about recent jobs, even running/finished ones)
 
 jobperf JOBID	          # (gives you performance stats for the job, once it's running)
 ```
