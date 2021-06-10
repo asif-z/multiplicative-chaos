@@ -8,7 +8,7 @@
 ssh -Y username@niagara.computecanada.ca	
 ```
 	
-   The username and password (for which you will be prompted) are those of your Compute Canada account.
+The username and password (for which you will be prompted) are those of your Compute Canada account.
 
 3. You will probably want to copy files from your machine to your cluster filesystem. You do this using
 
@@ -28,7 +28,7 @@ scp username@niagara.computecanada.ca:filePath destinationPath
 
 6. A simple job script (.sh file) looks something like this:
 
-	```
+```
 \#!/bin/bash
 \#SBATCH --nodes=1
 \#SBATCH --cpus-per-task=40
