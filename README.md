@@ -1,5 +1,4 @@
-# random-power-series-coefficients
-An algorithm for computing random exponential power series coefficients
+# multiplicative chaos in number theory
 
 This repository hosts code and data for the paper "A conjectural asymptotic formula for multiplicative chaos in number theory" by D. Aggarwal, U. Subedi, W. Verreault, A. Zaman, and C. Zheng. 
 
