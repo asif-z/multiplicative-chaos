@@ -23,4 +23,4 @@ and can be invoked using
 mpirun ./complex_Gaussian
 ```
 
-This will run a Monte Carlo simulation for (A(n)) in the case when (X_k) is a sequence of independent standard complex Gaussians for N = 20000 and a sample size of 10 million. Intermediate data for A(n) is _not_ saved and only the final sample mean of |A(n)| is written to file.
+This will run a Monte Carlo simulation for (A(n)), n = 1,...,N in the case when (X_k) is a sequence of independent standard complex Gaussians for N = 20000 and a sample size of 10 million. Intermediate data for A(n) is _not_ saved and only the final sample mean of the |A(n)|'s is written to file.
